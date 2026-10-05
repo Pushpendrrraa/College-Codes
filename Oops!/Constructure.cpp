@@ -16,13 +16,13 @@ class complex{
 complex sum(complex c1 , complex c2){
     complex c3;
     c3.x=c1.x+c2.x;
-    c3.x=c1.y+c2.y;
+    c3.y=c1.y+c2.y;
     return c3;
-}
+};
 
 void show(complex c){
     cout<<c.x<<"+i"<<c.y<<"\n";
-}
+};
 
 int main(){
 
@@ -35,4 +35,4 @@ int main(){
     cout<<"b= ";show(b);
     cout<<"c= ";show(c);
     return 0;
-}
+};
