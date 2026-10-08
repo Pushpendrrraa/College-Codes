@@ -52,6 +52,36 @@ int main(){
     } 
 
     cout<<endl;
+  
+    node *newnode;
+    newnode = new node;
+    newnode -> data = 47;
+    n3 -> next = newnode;
+    newnode -> previous = n3;
+    newnode -> next = nullptr;
 
+    ptr = head;
+
+    while(ptr!=nullptr){
+        cout<<ptr->data<<endl;
+        ptr = ptr->next;
+    }
+
+    cout<<endl;
+
+    node *newnode2;
+    newnode2 = new node;
+    newnode2 -> data = 89;
+    n1 -> previous = newnode2;
+    newnode2 -> next = n1;
+    newnode2 -> previous = nullptr;
+    tail = newnode ;
+
+    ptr = tail;
+
+    while(ptr!=nullptr){
+        cout<<ptr->data<<endl;
+        ptr = ptr->previous;
+    }
 
 };
